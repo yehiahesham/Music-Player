@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Control">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ListView fx:id="playlist" layoutX="3.0" layoutY="55.0" onMousePressed="#playvia_doubleclk" prefHeight="751.0" prefWidth="345.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="778.0" prefWidth="769.0">
+         <children>
+            <Button fx:id="mute_button" layoutX="517.0" layoutY="612.0" maxHeight="65.0" maxWidth="85.0" minHeight="5.0" minWidth="21.0" mnemonicParsing="false" onAction="#un_mute" prefHeight="65.0" prefWidth="79.0">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Volume-mute-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Slider layoutX="371.0" layoutY="636.0" />
+            <Button layoutX="601.0" layoutY="508.0" maxHeight="79.0" maxWidth="130.0" minHeight="30.0" minWidth="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="79.0" style="-fx-background-radius: 300;">
+               <graphic>
+                  <ImageView fitHeight="106.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/button_black_repeat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Backward_bt" layoutX="306.0" layoutY="518.0" maxHeight="65.0" maxWidth="85.0" minHeight="65.0" minWidth="85.0" mnemonicParsing="false" onAction="#Backward" prefHeight="10.0" prefWidth="10.0" style="-fx-background-radius: 200;">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/player_backward.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Forward_bt" layoutX="503.0" layoutY="518.0" maxHeight="65.0" maxWidth="85.0" minHeight="65.0" minWidth="85.0" mnemonicParsing="false" onAction="#Forward" prefHeight="10.0" prefWidth="10.0" style="-fx-background-radius: 200;">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/player_forward.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="stop" layoutX="403.0" layoutY="518.0" maxHeight="65.0" maxWidth="85.0" minHeight="65.0" minWidth="85.0" mnemonicParsing="false" onAction="#Stop" prefHeight="10.0" prefWidth="10.0" style="-fx-background-radius: 200;">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/player_stop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="play_pause" layoutX="205.0" layoutY="518.0" maxHeight="65.0" maxWidth="85.0" minHeight="65.0" minWidth="85.0" mnemonicParsing="false" onAction="#playMusic" prefHeight="10.0" prefWidth="10.0" style="-fx-background-radius: 200;">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/player_play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Slider layoutX="189.0" layoutY="477.0" prefHeight="18.0" prefWidth="500.0" />
+            <ImageView fitHeight="371.0" fitWidth="500.0" layoutX="196.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="song_name" layoutX="180.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="500.0" />
+            <Button fx:id="browser" layoutX="29.0" layoutY="645.0" maxHeight="75.0" maxWidth="97.0" minHeight="36.0" minWidth="43.0" mnemonicParsing="false" onAction="#openfile" prefHeight="75.0" prefWidth="79.0" style="-fx-background-radius: 400;" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Blend mode="MULTIPLY" />
+                     </effect>
+                     <image>
+                        <Image url="@../../../DISK+ANALYZER(GUI&amp;BACK)/src/fxml/images/1426184636_Search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
